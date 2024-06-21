@@ -1,0 +1,46 @@
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>DAILY TASK TRACKER</h1>
+    <div class="column"> 
+        <h2>TO DO</h2>
+        <label>activity</label>
+        <input id="task" type="text">
+        <br><br>
+        <label>duration "seconds"</label>
+        <input id="time" type="number">
+        <br><br>
+        <button id="submit" onclick="save()">submit</button>
+        <button  id="supp" onclick="nomore()">clear all</button>
+        <br><br>
+        <select id="list" onchange="doing(this)">
+            
+        </select>
+    </div>
+
+
+
+
+
+
+    <div class="column"> 
+        <h2>DOING</h2>
+        <h3 id="while"></h3>
+        <h3 id="oh"></h3>
+        <button id="start" onclick="begin()"  >start</button>
+        <br><br>
+        <button id="nicely" onclick="nice()" >YES!</button>
+        <button id="nah" onclick="begin2()">NO</button>
+    </div>
+
+
+
+
+    <div class="column"> 
+        <h2>DONE</h2>
+        <ol id="done"></ol>
+    </div>
+    <script src="index.js" ></script>
+
+</body>

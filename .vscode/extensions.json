@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "luis.console-log",
+        "lostfields.nodejs-repl"
+    ]
+}
