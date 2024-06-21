@@ -50,12 +50,15 @@ button{
   background-color: rgb(255, 243, 173);
   font-size: 90%;
   border-radius: 10%;
+  
 }
 #nah{
   background-color: #f5a5a5;
+  display: none;
 }
 #nicely{
 background-color: #a5f5c6;
+display: none;
 }
 #oh{
   color: #7a7377;
@@ -77,4 +80,7 @@ option{
 
   
 
+}
+#start{
+  display: none;
 }
