@@ -72,6 +72,11 @@ display: none;
 #oh{
   color: #3b383a;
   font-size:140% ;
+  display: none;
+  place-items: center ;
+  width: 50px;
+  border-radius: 20px;
+  border: 5px solid rgb(122, 224, 122);
 }
 #while{
   color: #2d3106;

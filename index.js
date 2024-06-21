@@ -34,6 +34,7 @@ if (storagedid!=[]){
 }
 
 function nomore(){
+    dur.style.display="none"
     localStorage.clear()
     alldid=[]
     alltasks=[]
@@ -90,6 +91,7 @@ function render(){
 function doing(b){
     a=b.selectedIndex-1
     now.textContent="Your current task is: "+alltasks[a]
+    dur.style.display="inline-table"
     dur.textContent=alltimes[a]
     start.style.display='inline-table'
 }
