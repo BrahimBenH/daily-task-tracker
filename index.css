@@ -1,16 +1,22 @@
 body{
-  background-color: rgb(199, 228, 212);
-  width: 600;
-  height: 400;
+  background-color:rgb(211, 230, 175);
+  width: 700px;
+  height: 10px;
 }
 
 .column {
     float: left;
-    width: 33.33%;
+    border-radius: 10%;
+    width: 30%;
+    height:3100%;
+    line-height: 1;
     text-align: center;
-    color: rgb(11, 70, 52);
-}
-h1{
+    color: rgb(11, 22, 19);
+    background-color:  rgb(157, 180, 150);
+    margin-left: 2%;
+  }
+  h1{
+
     color: #5e0a0a;
     font-family: Helvetica;
     margin: 5%;
@@ -37,14 +43,16 @@ h1{
     display:inline-table;
     font-weight: bolder;
   }
+
 h2{
-  color: rgb(146, 24, 24);
+  background-color: #420606;
+  color: rgb(219, 59, 59);
   font-weight:800;
   font-size: 200%;
   align-items: center;
 }
 label{
-  color: rgb(62, 119, 16);
+  color: rgb(119, 16, 16);
   font-weight: bold;
 }
 button{
@@ -62,20 +70,27 @@ background-color: #a5f5c6;
 display: none;
 }
 #oh{
-  color: #7a7377;
+  color: #3b383a;
   font-size:140% ;
 }
 #while{
-  color: #8d0f87;
-  font-size:170% ;
+  color: #2d3106;
+  line-height: 125%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:145% ;
 }
 ol{
-  margin-right: 11%;
+  margin-right: 20%;
   font-size: 150%;
   color: #032557;
+
+  
 }
 option{
   align-items: left;
+
+  
+
 }
 #start{
   display: none;

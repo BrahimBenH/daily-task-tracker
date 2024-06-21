@@ -21,9 +21,6 @@ let storagetimes=JSON.parse(localStorage.getItem("alltimes"))
 nicely.style.display='none'
 nah.style.display='none'
 start.style.display='none'
-
-
-
 if ((storagetasks!=[]) && (storagetimes!=[])){
     alltasks=storagetasks
     alltimes=storagetimes
@@ -47,10 +44,8 @@ function nomore(){
     localStorage.setItem("alldid","")
     localStorage.setItem("alltasks","")
     localStorage.setItem("alltimes","")
-    
     render()
     alldone()
-    now.textContent=""
 }
 
 
@@ -71,9 +66,11 @@ function save(){
     console.log(7)
     ta=task.value
     ti=time.value
-    task.value=""
-    time.value=""
+    
+    console.log(5)
     if ((ta!="") && (ti!=0)){
+        task.value=""
+        time.value=""
         alltasks.push(ta)
         alltimes.push(ti)
         localStorage.setItem("alltasks",JSON.stringify(alltasks))
@@ -83,7 +80,6 @@ function save(){
 }
 
 function render(){
-    console.log(88)
     let all="<option></option>"
     for (i=0;i<alltasks.length;i++){
         all+="<option>"+alltasks[i]+" (" +alltimes[i]+"s)</loption>"
@@ -93,7 +89,7 @@ function render(){
 }
 function doing(b){
     a=b.selectedIndex-1
-    now.textContent=alltasks[a]
+    now.textContent="Your current task is: "+alltasks[a]
     dur.textContent=alltimes[a]
     start.style.display='inline-table'
 }
@@ -130,13 +126,19 @@ function begin2(){
 }
 
 function begin(){
-    
+    let red=213
+    let green =  235
+    let blue=173
     c=alltimes[a]
     setTimeout(() => { finish(); }, alltimes[a]*1000);
     let interval = setInterval(() => {
         if (c > 0) {
             c = c - 1;
             dur.textContent = c;
+           // red-=20
+           // green-=20
+          //  blue-=20
+          //  document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
         } else {
             clearInterval(interval); // Stop the interval when the countdown reaches 0
         }
