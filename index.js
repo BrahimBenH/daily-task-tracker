@@ -38,9 +38,9 @@ function nomore(){
     alldid=[]
     alltasks=[]
     alltimes=[]
-    storagetasks=""
-    storagetimes=""
-    storagedid=""
+    storagetasks=[]
+    storagetimes=[]
+    storagedid=[]
     localStorage.setItem("alldid","")
     localStorage.setItem("alltasks","")
     localStorage.setItem("alltimes","")
@@ -68,7 +68,6 @@ function save(){
     ti=time.value
     task.value=""
     time.value=""
-    console.log(5)
     if ((ta!="") && (ti!=0)){
         alltasks.push(ta)
         alltimes.push(ti)
@@ -79,6 +78,7 @@ function save(){
 }
 
 function render(){
+    console.log(88)
     let all="<option></option>"
     for (i=0;i<alltasks.length;i++){
         all+="<option>"+alltasks[i]+" (" +alltimes[i]+"s)</loption>"

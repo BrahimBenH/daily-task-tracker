@@ -1,5 +1,7 @@
 body{
   background-color: rgb(199, 228, 212);
+  width: 500;
+  height: 220;
 }
 
 .column {
