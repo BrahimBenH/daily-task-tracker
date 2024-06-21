@@ -21,6 +21,9 @@ let storagetimes=JSON.parse(localStorage.getItem("alltimes"))
 nicely.style.display='none'
 nah.style.display='none'
 start.style.display='none'
+
+
+
 if ((storagetasks!=[]) && (storagetimes!=[])){
     alltasks=storagetasks
     alltimes=storagetimes
@@ -44,8 +47,10 @@ function nomore(){
     localStorage.setItem("alldid","")
     localStorage.setItem("alltasks","")
     localStorage.setItem("alltimes","")
+    
     render()
     alldone()
+    now.textContent=""
 }
 
 
