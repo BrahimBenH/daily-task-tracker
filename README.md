@@ -2,6 +2,12 @@
 
 A task-tracking web application designed to streamline the organization and management of daily tasks. This app was built with HTML, CSS, JavaScript, and Firebase and deployed on Netlify, providing a mobile-friendly experience accessible directly from smartphones.
 
+## Access the Application
+
+You can access the Daily Task Tracker web application at the following link:
+
+- [Daily Task Tracker](https://6686d59c4948c246682e2c6a--quiet-cendol-7f8839.netlify.app/index.html)
+
 ## Features
 
 - **Task Management**: Add, edit, and delete tasks easily.
